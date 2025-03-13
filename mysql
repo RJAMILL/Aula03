@@ -1,0 +1,17 @@
+CREATE DATABASE Alunos;
+
+USE Alunos;
+
+CREATE TABLE alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    idade INT NOT NULL,
+    turma VARCHAR(50) NOT NULL
+);
+
+INSERT INTO alunos (nome, idade, turma)
+VALUES
+    ('Rafael Jamil', 20, 'Turma A'),
+    ('Jorge Miguel', 22, 'Turma B'),
+    ('Caio Cesar', 19, 'Turma C'),
+    ('Ana Costa', 21, 'Turma A');
